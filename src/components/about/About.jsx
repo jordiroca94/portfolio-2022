@@ -20,7 +20,7 @@ const About = () => {
             <article className="about__card">
               <FaHotel className="about__icon"/>
               <h5>Background</h5>
-              <small>Hosplitality</small>
+              <small>Hosplitality & Technology</small>
             </article>
             <article className="about__card">
               <BsCodeSlash className="about__icon"/>
