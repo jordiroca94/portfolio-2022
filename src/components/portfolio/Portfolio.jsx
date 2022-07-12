@@ -2,6 +2,7 @@ import React from 'react'
 import "./portfolio.css"
 import IMG1 from "../../assets/portfolio1.jpg"
 import IMG2 from "../../assets/portfolio2.png"
+import IMG3 from "../../assets/portfolio3.png"
 
 
 
@@ -33,7 +34,7 @@ const Portfolio = () => {
         </article>
         <article className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG1} alt=""></img>
+            <img src={IMG3} alt=""></img>
           </div>
             <h3>Netflix Clone React </h3>
             <div className="portfolio__item-cta">
