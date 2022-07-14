@@ -4,7 +4,29 @@ import IMG1 from "../../assets/portfolio1.jpg"
 import IMG2 from "../../assets/portfolio2.png"
 import IMG3 from "../../assets/portfolio3.png"
 
-
+const data = [
+  {
+    id:1,
+    image: IMG1,
+    title:"Pirates of the Caribbean",
+    github: "https://github.com/jordiroca94/Pirates-Of-The-Caribbean",
+    demo: "https://github.com/jordiroca94/Pirates-Of-The-Caribbean",
+  },
+  {
+    id:2,
+    image: IMG2,
+    title:"Duga App",
+    github: "https://github.com/project-duga/duga-app",
+    demo: "https://duga-app.herokuapp.com/users/login",
+  },
+  {
+    id:3,
+    image: IMG3,
+    title:"Netflix Clone React",
+    github: "https://github.com/jordiroca94/Netflix",
+    demo: "https://netflix-clone-2022.herokuapp.com",
+  }
+]
 
 const Portfolio = () => {
   return (
@@ -12,37 +34,22 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
-        <article className='portfolio__item'>
+      {
+        data.map(({id,image,title,github,demo})=>{
+          return(
+            <article key={id} className='portfolio__item'>
           <div className="portfolio__item-image">
-            <img src={IMG1} alt=""></img>
+            <img src={image} alt={title}></img>
           </div>
-            <h3>Pirates of the Caribbean </h3>
+            <h3>{title} </h3>
             <div className="portfolio__item-cta">
-            <a href="https://github.com/jordiroca94/Pirates-Of-The-Caribbean" className='btn' target="_blank">Github</a>
-            <a href="" className='btn btn-primary' target="_blank">Live Demo</a>
+            <a href={github} className='btn' target="_blank">Github</a>
+            <a href={demo} className='btn btn-primary' target="_blank">Live Demo</a>
             </div>
         </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG2} alt=""></img>
-          </div>
-            <h3>Duga App </h3>
-            <div className="portfolio__item-cta">
-            <a href="https://github.com/project-duga/duga-app" className='btn' target="_blank">Github</a>
-            <a href="https://duga-app.herokuapp.com/users/login" className='btn btn-primary' target="_blank">Live Demo</a>
-            </div>
-        </article>
-        <article className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={IMG3} alt=""></img>
-          </div>
-            <h3>Netflix Clone React </h3>
-            <div className="portfolio__item-cta">
-            <a href="https://github.com/jordiroca94/Netflix" className='btn' target="_blank">Github</a>
-            <a href="https://netflix-clone-2022.herokuapp.com/" className='btn btn-primary' target="_blank">Live Demo</a>
-            </div>
-        </article>
-  
+          )
+        })
+      }
       </div>
     </section>
   )
