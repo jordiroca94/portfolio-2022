@@ -11,8 +11,8 @@ const data = [
     title:"Pirates of the Caribbean",
     description:"Canvas Game where you are a pirate and you have to shoot sharks, avoid obstacles and help your mates to increase your score.",
     stack:"Javascript, Html and CSS.",
-    github: "https://jordiroca94.github.io/Pirates-Of-The-Caribbean",
-    demo: "https://github.com/jordiroca94/Pirates-Of-The-Caribbean",
+    github: "https://github.com/jordiroca94/Pirates-Of-The-Caribbean",
+    demo: "https://jordiroca94.github.io/Pirates-Of-The-Caribbean",
   },
   {
     id:2,
