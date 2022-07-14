@@ -25,10 +25,15 @@ const About = () => {
             <article className="about__card">
               <BsCodeSlash className="about__icon"/>
               <h5>Projects</h5>
-              <small>4 Projects Completed</small>
+              <small>3 Projects Completed</small>
             </article>
           </div>
-          <p> Hello I'm Jordi</p>
+          <p className='about__content'>I'm a junior web developer with one year of experience coding.<br/><br/>
+          With background in Hotel Management I'have been many years working in diferent countries such as United States, Spain and Greece following one of my many passions: Work in huge multicultural teams with people from all over the world.<br/><br/>
+          After finishing my bachelor degree studies in Nanyang Technological University in Singapore I'had the chance to start getting interested in web development becoming one more of my passion.<br/><br/>
+          Few years later I'started coding more professionaly until I decided to make it fully professional and joined a Fullstack web development Bootcamp at Ironhack Barcelona.<br/><br/>
+          After this bootcamp I had the chance to start working in a Swedish startup as a Front-end developer named ClowID.<br/>
+          </p>
           <div className='about-button'>
           <a href="#contact" className="btn btn-primary">Let's Talk</a>
           </div>
