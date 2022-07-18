@@ -45,6 +45,21 @@
     word-break: break-all;
 }
 
+a{
+    color: var(--color-white);    
+}
+
+a:hover{
+    color:var(--color-primary);
+    transition: var(--transition);
+}
+
+.contact__submit{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    gap:1rem;
+}
 
 /* FORM STYLE */
 
