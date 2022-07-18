@@ -41,11 +41,10 @@
     margin-bottom: 0.5rem;
 }
 
-.contact__option a{
-    margin-top:0.7rem; 
-    display:inline-block;
-    font-size: 0.8rem;
+.contact__option h5{
+    word-break: break-all;
 }
+
 
 /* FORM STYLE */
 
